@@ -1,11 +1,10 @@
-{
-    "name": "crowestephen.me",
-    "version": "1.0.0",
-    "main": "src/index.js",
-    "repository": "https://github.com/stephenmcrowe/crowestephen.me",
-    "author": "Stephen Crowe <crowe.stephen.m@gmail.com>",
-    "license": "MIT",
-    "scripts": {
-        "start": "node src/index.js"
-    }
-}
+import './style.scss';
+
+// change require to es6 import style
+import $ from 'jquery';
+
+let counter = 0;
+setInterval(() => {
+  counter += 1;
+  $('#main').html(`You've been on this page for ${counter} seconds.`);
+}, 1000);
