@@ -1,0 +1,20 @@
+{
+  "about": [
+    { 
+      "content": "I am an aspiring software engineer studying Computer Science at Dartmouth. I began my coding career at Los Gatos High School, and since then have taken courses in Software Design and Implementation, Algorithms, Applied Cryptography, Full-Stack Web Development, Machine Learning and Statistical Analysis, among other areas.",
+      "key": 0
+    },
+    {
+      "content": "At Dartmouth I have experience working as a teacher’s assistant and as a developer for HackDartmouth, the club which organizes the annual Dartmouth hackathon. I also had some amazing internships at Minerva Networks, Grove Collaborative, and NVIDIA.",
+      "key": 1
+    },
+    {
+      "content": "Through my academics and professional experience, I’ve learned Java, Python, C, PHP, and Javascript. I’m familiar with frameworks such as React, React-Native, Node, and Flask. I’ve also used tools such as Airflow, Selenium, MongoDB, Docker and Heroku for deployment, and Git for version control.",
+      "key": 2
+    },
+    {
+      "content": "Aside from CS, I spend most of my time playing ultimate frisbee with Dartmouth’s PainTrain and organizing Dartmouth’s annual hackathon with HackDartmouth.",
+      "key": 3
+    }
+  ]
+}
