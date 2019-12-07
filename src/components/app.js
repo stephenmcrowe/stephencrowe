@@ -2,9 +2,10 @@ import React from 'react';
 // import Counter from '../containers/counter';
 // import Controls from '../containers/controls';
 import About from './about';
-import Navbar from './navbar';
+import Experience from './experience';
 import Home from './home';
-import '../styles/style.scss';
+import Navbar from './navbar';
+import '../styles/stylesheet.scss';
 
 const App = (props) => {
   return (
@@ -12,6 +13,7 @@ const App = (props) => {
       <Navbar />
       <Home />
       <About />
+      <Experience />
     </div>
   );
 };

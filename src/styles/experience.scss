@@ -1,0 +1,249 @@
+@import './stylesheet.scss';
+
+// Inspiration taken from https://codepen.io/paulhbarker/pen/apvGdv
+$box-shadow: 0px 1px 22px 4px rgba(0, 0, 0, 0.07);
+$border: 1px solid rgba(191, 191, 191, 0.4);
+$items: 6;
+$rows: ceil($items/2);
+
+// Card sizing
+$card-height-estimation: 200px;
+$card-width: 450px;
+$body-padding: 15px;
+$outer-margin: 120px;
+$head-height: 100px;
+$logo-size: 35px;
+$stagger: 210px;
+
+$arrow-length: 25px;
+$arrow-height: 15px;
+$marker-size: 12px;
+
+// Colors
+$nvidiaLightGreen: #7cd000;
+$nvidiaBlack: #010203;
+$groveBlue: #033b4c;
+$minervaBlue: #0058a6;
+
+
+// Calculations
+$container-height: $rows * ($card-height-estimation + $outer-margin) + $stagger;
+$container-width: $card-width*2 + $outer-margin;
+$marker-dist: $card-width + $outer-margin/2 - $marker-size/2;
+
+// Arrow and marker extensions
+@include mq-lg {
+  %arrow {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: $arrow-height solid transparent;
+    border-bottom: $arrow-height solid transparent;
+  }
+  %marker {
+    position: absolute;
+    content: "";
+    width: $marker-size;
+    height: $marker-size;
+    background-color: $orange;
+    border-radius: $marker-size;
+    box-shadow: 0px 0px 2px 12px $yellow;
+  }
+}
+
+
+// Ordering the cards for displaying correctly
+$counter: $items - $rows + 2;
+@for $i from 1 through $rows {
+  .card:nth-child(#{$i*2-1})   { order: $i }
+  .card:nth-child(#{$i*2})     { order: $counter }
+  $counter: $counter + 1;
+}
+
+
+#experience {
+  @extend %flex-column;
+  background: $yellow;
+
+  .title {
+    @extend %flex-row;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 30px 0px 50px 0px;
+    flex: 0 1 auto;
+    div {
+      border-bottom: 3px solid $orange;
+    }
+  }
+
+  .cardContainer {
+    position: relative;
+    margin: auto;
+
+    @include mq-lg {
+      display: flex;
+      flex-flow: column wrap;
+      min-width: $container-width;
+      height: $container-height;
+      margin: 0 auto;
+    }
+    &::after {
+      z-index: 1;
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      border-left: $border;
+      border-left: 2px solid $black;
+    }
+  }
+
+  .card {
+    position: relative;
+    @extend %flex-column;
+
+    margin: 250px auto 80px;
+    max-width: 94%;
+    z-index: 2;
+    @include mq-sm {
+      max-width: 60%;
+      box-shadow: $box-shadow;
+    }
+    @include mq-md {
+      max-width: 50%;
+    }
+    @include mq-lg {
+      max-width: $card-width;
+      margin-top: $outer-margin/2;
+      margin-bottom: $outer-margin/2;
+      &:nth-child(odd) {
+        margin-right: $outer-margin/2;
+        .cardHeader::after {
+          @extend %arrow;
+          border-left-width: $arrow-length;
+          border-left-style: solid;
+          left: 100%;
+        }
+        .cardHeader::before {
+          @extend %marker;
+          left: $marker-dist;
+        }
+      }
+      &:nth-child(even) {
+        margin-left: $outer-margin/2;
+        .cardHeader::after {
+          @extend %arrow;
+          border-right-width: $arrow-length;
+          border-right-style: solid;
+          right: 100%;
+        }
+        .cardHeader::before {
+          @extend %marker;
+          right: $marker-dist - 2;
+        }
+      }
+      &:nth-child(2) {
+        margin-top: $stagger;
+      }
+    }
+    .cardHeader {
+      position: relative;
+      @extend %flex-row;
+      flex: 0 1 auto;
+      align-items: center;
+      border: $border;
+
+      .cardLogo {
+        @extend %flex-row;
+        justify-content: center;
+        align-items: center;
+        margin: $body-padding;
+        height: 35px;
+        width: 35px;
+
+        img {
+          height: 100%;
+          width: auto;
+        }
+      }
+      .cardTitle {
+        text-transform: uppercase;
+        font-size: 1.3rem;
+        letter-spacing: 2px;
+        margin: 0;
+        padding-bottom: 6px;
+        @include mq-sm {
+          font-size: 165%;
+          line-height: 1.35rem;
+        }
+        .cardDate {
+          display: block;
+          font-size: 0.6rem;
+          @include mq-sm {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+    .cardBody {
+      flex: 1;
+      background: $white;
+      border: $border;
+      border-top: 0;
+      padding: $body-padding;
+    }
+  }
+}
+
+.nvidia {
+  background-color: $nvidiaBlack;
+  .cardHeader {
+    color: $nvidiaLightGreen;
+    .cardLogo {
+      padding: 2px;
+    }
+  }
+  .cardHeader::after {
+    border-color: $nvidiaBlack;
+  }
+}
+
+.grove {
+  background-color: $groveBlue;
+  .cardHeader {
+    color: $white;
+  }
+  .cardHeader::after {
+    border-color: $groveBlue;
+  }
+}
+
+.dartmouth {
+  background-color: $green;
+  .cardHeader {
+    color: $white;
+    .cardLogo {
+      padding: 2px;
+      background-color: $white;
+    }
+  }
+  .cardHeader::after {
+    border-color: $green;
+  }
+}
+
+.minerva {
+  background-color: $minervaBlue;
+  .cardHeader {
+    color: $white;
+    .cardLogo {
+      padding: 2px;
+      background-color: $white;
+    }
+  }
+  .cardHeader::after {
+    border-color: $minervaBlue;
+  }
+}

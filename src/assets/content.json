@@ -16,5 +16,55 @@
       "content": "Aside from CS, I spend most of my time playing ultimate frisbee with Dartmouth’s PainTrain and organizing Dartmouth’s annual hackathon with HackDartmouth.",
       "key": 3
     }
+  ],
+  "experience": [
+    {
+      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.",
+      "date": "Jun - Aug 2019",
+      "key": 0,
+      "logo": "/src/img/nvidia.svg",
+      "style": "nvidia",
+      "title": "NVIDIA"
+    },
+    {
+      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.",
+      "date": "Nov 2018 - Mar 2019",
+      "key": 1,
+      "logo": "/src/img/grove-symbol-white.svg",
+      "style": "grove",
+      "title": "Grove Collaborative"
+    },
+    {
+      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.",
+      "date": "Jun - Aug 2018",
+      "key": 2,
+      "logo": "/src/img/dartmouth.svg",
+      "style": "dartmouth",
+      "title": "Teacher's Assistant"
+    },
+    {
+      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.",
+      "date": "Jun - Aug 2017",
+      "key": 3,
+      "logo": "/src/img/image2vector.svg",
+      "style": "minerva",
+      "title": "Minerva Networks"
+    },
+    {
+      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.",
+      "date": "Jun - Aug 2015",
+      "key": 4,
+      "logo": "/src/img/image2vector.svg",
+      "style": "minerva",
+      "title": "Minerva Networks"
+    },
+    {
+      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.",
+      "date": "Jun - Aug 2014",
+      "key": 5,
+      "logo": "/src/img/image2vector.svg",
+      "style": "minerva",
+      "title": "Minerva Networks"
+    }
   ]
 }

@@ -1,0 +1,51 @@
+@import './stylesheet.scss';
+
+.aboutpage {
+  @extend %flex-column;
+  background-color: $gray;
+  // height: 100vh;
+
+  .aboutHeader {
+    @extend %flex-row;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 20px 0px;
+    flex: 0 1 auto;
+    div {
+      border-bottom: 3px solid $orange;
+    }
+  }
+
+  .aboutContent {
+    @extend %flex-row;
+    justify-content: space-around;
+    // background-color: $gray;
+    flex: 1;
+    padding: 20px 0px;
+  }
+}
+
+.profile {
+  @extend %flex-row;
+  flex: 2;
+  justify-content: center;
+  align-items: flex-start;
+
+  img {
+    min-width: 100px;
+    width: 75%;
+    height: auto;
+  }
+}
+
+.information {
+  @extend %flex-column;
+  // justify-content: center;
+  padding-right: 10%;
+  padding-top: 10px;
+  flex: 3;
+
+  div {
+    padding: 10px 0px;
+  }
+}

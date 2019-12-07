@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import content from '../assets/content.json';
-// import { connect } from 'react-redux';
-// import { withRouter } from 'react-router-dom';
-
 import profile from '../img/eiffeltower_selfie.png';
+import '../styles/about.scss';
 
 class About extends Component {
   constructor(props) {
