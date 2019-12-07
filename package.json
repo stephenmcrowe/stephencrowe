@@ -2,6 +2,7 @@
   "name": "starterpack-stephenmcrowe",
   "version": "1.0.0",
   "main": "src/index.js",
+  "homepage": "http://crowestephen.me",
   "repository": "https://github.com/dartmouth-cs52-19S/starterpack-stephenmcrowe",
   "author": "Stephen Crowe <crowe.stephen.m@gmail.com>",
   "license": "MIT",
@@ -35,6 +36,7 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "gh-pages": "^2.1.1",
     "jquery": "^3.4.0",
     "lodash.debounce": "^4.0.8",
     "react": "^16.8.6",
@@ -52,6 +54,7 @@
     "test": "eslint src/**.js",
     "build": "yarn clean; NODE_ENV=production webpack --colors",
     "clean": "rimraf dist",
-    "deploy": "yarn build; surge -p dist -d stephencrowe-cs52-starter.surge.sh; yarn clean"
+	"predeploy": "yarn run build",
+    "deploy": "yarn build; gh-pages -d build; yarn clean"
   }
 }
