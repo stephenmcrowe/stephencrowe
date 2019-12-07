@@ -1,9 +1,8 @@
 {
-  "name": "starterpack-stephenmcrowe",
+  "name": "stephen-crowe-website",
   "version": "1.0.0",
   "main": "src/index.js",
-  "homepage": "http://crowestephen.me",
-  "repository": "https://github.com/dartmouth-cs52-19S/starterpack-stephenmcrowe",
+  "homepage": "https://github.com/stephenmcrowe/crowestephen.me",
   "author": "Stephen Crowe <crowe.stephen.m@gmail.com>",
   "license": "MIT",
   "devDependencies": {
@@ -54,7 +53,7 @@
     "test": "eslint src/**.js",
     "build": "yarn clean; NODE_ENV=production webpack --colors",
     "clean": "rimraf dist",
-	"predeploy": "yarn run build",
-    "deploy": "yarn build; gh-pages -d build; yarn clean"
+    "predeploy": "yarn run build",
+    "deploy": "cp CNAME dist; gh-pages -d dist; yarn clean"
   }
 }
