@@ -18,10 +18,6 @@ body, html {
   box-sizing: border-box;
 }
 
-// div {
-//   color: $black;
-// }
-
 // Media Queries
 @mixin mq-xs {
   @media (min-width: 320px) {

@@ -50,7 +50,7 @@ nav {
 }
 
 .nav {
-  background-color: $gray;
+  background-image: linear-gradient(to top, rgba(234, 234, 234, .95), $gray);
   .navLink {
     color: $black;
     &:hover {

@@ -3,6 +3,7 @@ import React from 'react';
 // import Controls from '../containers/controls';
 import About from './about';
 import Experience from './experience';
+import Portfolio from './portfolio';
 import Home from './home';
 import Navbar from './navbar';
 import '../styles/stylesheet.scss';
@@ -14,6 +15,7 @@ const App = (props) => {
       <Home />
       <About />
       <Experience />
+      <Portfolio />
     </div>
   );
 };

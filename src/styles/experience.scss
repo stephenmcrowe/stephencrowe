@@ -176,7 +176,7 @@ $counter: $items - $rows + 2;
         padding-bottom: 6px;
         @include mq-sm {
           font-size: 165%;
-          line-height: 1.35rem;
+          line-height: 1.6rem;
         }
         .cardDate {
           display: block;

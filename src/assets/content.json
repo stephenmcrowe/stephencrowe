@@ -66,5 +66,47 @@
       "style": "minerva",
       "title": "Minerva Networks"
     }
+  ],
+  "portfolio": [
+    {
+      "content": "Chef's Kiss: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.",
+      "key": 1,
+      "logo": "/src/img/chefskiss_red.svg"
+    },
+    {
+      "content": "Pantri: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.",
+      "key": 2,
+      "logo": "/src/img/pantri.svg"
+    },
+    {
+      "content": "Gut-Busters: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.",
+      "key": 3,
+      "logo": "/src/img/gut_busters.svg"
+    },
+    {
+      "content": "This website: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.",
+      "key": 4,
+      "logo": "/src/img/monitor_mac.svg"
+    },
+    {
+      "content": "HackDartmouth: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.",
+      "key": 5,
+      "logo": "/src/img/hackdartmouth_logo.svg"
+    },
+    {
+      "content": "Tiny-Search Engine: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.",
+      "key": 6,
+      "logo": "/src/img/search.svg"
+    },
+    {
+      "content": "cs72 final project: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.",
+      "key": 7,
+      "logo": "/src/img/handout.svg"
+    },
+    {
+      "content": "Digital Electronics: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.",
+      "key": 8,
+      "logo": "/src/img/cpu.svg"
+    }
   ]
 }
