@@ -20,8 +20,16 @@
   "experience": [
     {
       "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.",
+      "date": "Jul 2020 - Present",
+      "key": "grove2020Pres",
+      "logo": "/src/img/grove-symbol-white.svg",
+      "style": "grove",
+      "title": "Grove Collaborative"
+    },
+    {
+      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.",
       "date": "Jun - Aug 2019",
-      "key": 0,
+      "key": "nvidia",
       "logo": "/src/img/nvidia.svg",
       "style": "nvidia",
       "title": "NVIDIA"
@@ -29,7 +37,7 @@
     {
       "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.",
       "date": "Nov 2018 - Mar 2019",
-      "key": 1,
+      "key": "grove20182019",
       "logo": "/src/img/grove-symbol-white.svg",
       "style": "grove",
       "title": "Grove Collaborative"
@@ -37,7 +45,7 @@
     {
       "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.",
       "date": "Jun - Aug 2018",
-      "key": 2,
+      "key": "dartmouth",
       "logo": "/src/img/dartmouth.svg",
       "style": "dartmouth",
       "title": "Teacher's Assistant"
@@ -45,7 +53,7 @@
     {
       "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.",
       "date": "Jun - Aug 2017",
-      "key": 3,
+      "key": "minerva2017",
       "logo": "/src/img/image2vector.svg",
       "style": "minerva",
       "title": "Minerva Networks"
@@ -53,7 +61,7 @@
     {
       "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.",
       "date": "Jun - Aug 2015",
-      "key": 4,
+      "key": "minerva2015",
       "logo": "/src/img/image2vector.svg",
       "style": "minerva",
       "title": "Minerva Networks"
@@ -61,7 +69,7 @@
     {
       "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.",
       "date": "Jun - Aug 2014",
-      "key": 5,
+      "key": "minerva2014",
       "logo": "/src/img/image2vector.svg",
       "style": "minerva",
       "title": "Minerva Networks"
@@ -70,43 +78,57 @@
   "portfolio": [
     {
       "content": "Chef's Kiss: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.",
-      "key": 1,
+      "key": "chefskiss",
       "logo": "/src/img/chefskiss_red.svg"
     },
     {
       "content": "Pantri: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.",
-      "key": 2,
+      "key": "pantri",
       "logo": "/src/img/pantri.svg"
     },
     {
       "content": "Gut-Busters: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.",
-      "key": 3,
+      "key": "gutbusters",
       "logo": "/src/img/gut_busters.svg"
     },
     {
       "content": "This website: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.",
-      "key": 4,
+      "key": "website",
       "logo": "/src/img/monitor_mac.svg"
     },
     {
       "content": "HackDartmouth: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.",
-      "key": 5,
+      "key": "hackdartmouth",
       "logo": "/src/img/hackdartmouth_logo.svg"
     },
     {
       "content": "Tiny-Search Engine: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.",
-      "key": 6,
+      "key": "tse",
       "logo": "/src/img/search.svg"
     },
     {
       "content": "cs72 final project: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.",
-      "key": 7,
+      "key": "compling",
       "logo": "/src/img/handout.svg"
     },
     {
       "content": "Digital Electronics: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.",
-      "key": 8,
+      "key": "digitalelectronics",
       "logo": "/src/img/cpu.svg"
+    }
+  ],
+  "footer": [
+    {
+      "link": "https://github.com/stephenmcrowe",
+      "logo": "/src/img/github.svg"
+    },
+    {
+      "link": "https://www.linkedin.com/in/stephen-crowe-20",
+      "logo": "/src/img/linkedin.svg"
+    },
+    {
+      "link": "https://www.facebook.com/stephen.crowe.750",
+      "logo": "/src/img/facebook.svg"
     }
   ]
 }

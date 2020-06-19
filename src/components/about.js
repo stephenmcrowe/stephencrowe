@@ -10,10 +10,6 @@ class About extends Component {
     this.state = {};
   }
 
-  componentDidMount() {
-    console.log(content);
-  }
-
   renderContent = () => {
     return content.about.map((ele) => {
       return (

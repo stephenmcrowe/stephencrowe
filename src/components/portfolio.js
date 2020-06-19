@@ -5,16 +5,7 @@ import '../styles/portfolio.scss';
 
 
 class Portfolio extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-    };
-  }
-
   renderPortfolio = () => {
-    console.log(content.portfolio);
-    // return <div>Hello</div>;
     return content.portfolio.map((data) => {
       return (
         <div key={data.key} className="card">
@@ -37,12 +28,6 @@ class Portfolio extends Component {
         </div>
         <div className="portfolioContainer">
           {this.renderPortfolio()}
-        </div>
-        <div>
-          Icons made by
-          <a href="http://www.freepik.com/" title="Freepik">Freepik</a>
-          from
-          <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
         </div>
       </section>
     );

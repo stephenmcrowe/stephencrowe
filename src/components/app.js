@@ -1,11 +1,11 @@
 import React from 'react';
-// import Counter from '../containers/counter';
-// import Controls from '../containers/controls';
+
 import About from './about';
 import Experience from './experience';
-import Portfolio from './portfolio';
+import Footer from './footer';
 import Home from './home';
 import Navbar from './navbar';
+import Portfolio from './portfolio';
 import '../styles/stylesheet.scss';
 
 const App = (props) => {
@@ -16,9 +16,9 @@ const App = (props) => {
       <About />
       <Experience />
       <Portfolio />
+      <Footer />
     </div>
   );
 };
 
 export default App;
-// ReactDOM.render(<App />, document.getElementById('main'));

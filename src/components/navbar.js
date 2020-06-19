@@ -46,7 +46,7 @@ class Navbar extends Component {
           >
             Portfolio
           </Link>
-          <Link to="contact" smooth className="navLink">Contact</Link>
+          {/* <Link to="contact" smooth className="navLink">Contact</Link> */}
         </div>
       </nav>
     );
