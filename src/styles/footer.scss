@@ -12,10 +12,14 @@ footer {
   }
 
   #icons-container {
+    @extend %flex-row;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 100%;
     margin-top: 20px;
 
-    img {
-      width: 30px;
+    svg {
       height: 30px;
       margin: 0px 10px;
 
