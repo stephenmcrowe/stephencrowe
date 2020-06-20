@@ -1,5 +1,6 @@
-/* eslint-disable max-len */
 import React, { Component } from 'react';
+
+import svgs from '../img';
 import content from '../assets/content.json';
 import '../styles/experience.scss';
 
@@ -14,11 +15,12 @@ class Experience extends Component {
 
   renderCards = () => {
     return content.experience.map((data) => {
+      const Icon = svgs[data.logo];
       return (
         <div key={data.key} className={`${data.style} card`}>
           <div className="cardHeader">
             <div className="cardLogo">
-              <img src={data.logo} alt="" />
+              <Icon />
             </div>
             <h2 className="cardTitle">
               <span className="cardDate">{data.date}</span>

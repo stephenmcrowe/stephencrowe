@@ -22,7 +22,7 @@
       "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.",
       "date": "Jul 2020 - Present",
       "key": "grove2020Pres",
-      "logo": "/src/img/grove-symbol-white.svg",
+      "logo": "grove",
       "style": "grove",
       "title": "Grove Collaborative"
     },
@@ -30,7 +30,7 @@
       "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.",
       "date": "Jun - Aug 2019",
       "key": "nvidia",
-      "logo": "/src/img/nvidia.svg",
+      "logo": "nvidia",
       "style": "nvidia",
       "title": "NVIDIA"
     },
@@ -38,7 +38,7 @@
       "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.",
       "date": "Nov 2018 - Mar 2019",
       "key": "grove20182019",
-      "logo": "/src/img/grove-symbol-white.svg",
+      "logo": "grove",
       "style": "grove",
       "title": "Grove Collaborative"
     },
@@ -46,7 +46,7 @@
       "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.",
       "date": "Jun - Aug 2018",
       "key": "dartmouth",
-      "logo": "/src/img/dartmouth.svg",
+      "logo": "dartmouth",
       "style": "dartmouth",
       "title": "Teacher's Assistant"
     },
@@ -54,7 +54,7 @@
       "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.",
       "date": "Jun - Aug 2017",
       "key": "minerva2017",
-      "logo": "/src/img/image2vector.svg",
+      "logo": "minerva",
       "style": "minerva",
       "title": "Minerva Networks"
     },
@@ -62,7 +62,7 @@
       "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.",
       "date": "Jun - Aug 2015",
       "key": "minerva2015",
-      "logo": "/src/img/image2vector.svg",
+      "logo": "minerva",
       "style": "minerva",
       "title": "Minerva Networks"
     },
@@ -70,7 +70,7 @@
       "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.",
       "date": "Jun - Aug 2014",
       "key": "minerva2014",
-      "logo": "/src/img/image2vector.svg",
+      "logo": "minerva",
       "style": "minerva",
       "title": "Minerva Networks"
     }
