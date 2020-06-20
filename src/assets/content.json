@@ -120,7 +120,7 @@
   "footer": [
     {
       "link": "https://github.com/stephenmcrowe",
-      "logo": "/src/img/github.svg"
+      "logo": "github.svg"
     },
     {
       "link": "https://www.linkedin.com/in/stephen-crowe-20",

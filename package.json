@@ -2,7 +2,7 @@
   "name": "stephen-crowe-website",
   "version": "1.0.0",
   "main": "src/index.js",
-  "homepage": "https://github.com/stephenmcrowe/crowestephen.me",
+  "homepage": "https://stephenmcrowe.github.io/crowestephen.me",
   "author": "Stephen Crowe <crowe.stephen.m@gmail.com>",
   "license": "MIT",
   "devDependencies": {
@@ -54,6 +54,6 @@
     "build": "yarn clean; NODE_ENV=production webpack --colors",
     "clean": "rimraf dist",
     "predeploy": "yarn run build",
-    "deploy": "cp CNAME dist; gh-pages -d dist; yarn clean"
+    "deploy": "gh-pages -d dist; yarn clean"
   }
 }
