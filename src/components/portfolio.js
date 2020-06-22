@@ -1,3 +1,4 @@
+/* eslint-disable react/no-danger */
 import React, { Component } from 'react';
 
 import svgs from '../img';
@@ -9,14 +10,13 @@ class Portfolio extends Component {
   renderPortfolio = () => {
     return content.portfolio.map((data) => {
       const Icon = svgs[data.logo];
+      const markup = { __html: data.content };
       return (
         <div key={data.key} className="card">
           <div className="cardLogo">
             <Icon />
           </div>
-          <div className="cardBody">
-            {data.content}
-          </div>
+          <div className="cardBody" dangerouslySetInnerHTML={markup} />
         </div>
       );
     });
