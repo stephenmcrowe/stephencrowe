@@ -1,11 +1,13 @@
+/* React imports */
 import React from 'react';
 
+/* custom imports */
+import Navbar from './navbar';
+import Home from './home';
 import About from './about';
 import Experience from './experience';
-import Footer from './footer';
-import Home from './home';
-import Navbar from './navbar';
 import Portfolio from './portfolio';
+import Footer from './footer';
 import '../styles/stylesheet.scss';
 
 const App = (props) => {

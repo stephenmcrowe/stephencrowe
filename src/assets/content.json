@@ -77,42 +77,42 @@
   ],
   "portfolio": [
     {
-      "content": "For the final project in my databases class, we built Chef's Kiss, a place to share and find recipes. It comes fully equipped with account authentication, search, favorites, and a small database of recipes. It's deployed on Heroku using a React frontend and an Express/MySQL backend. Check out the code here!",
+      "content": "For the final project in my databases class, we built [Chef's Kiss](http://chefskiss.surge.sh/), a place to share and find recipes. It comes fully equipped with account authentication, search, favorites, and a small database of recipes. It's deployed on Heroku using a React frontend and an Express/MySQL backend. Check out the code [here](https://github.com/stephenmcrowe/askew-elk)!",
       "key": "chefskiss",
       "logo": "chefskiss"
     },
     {
-      "content": "For my culminating experience at Dartmouth, we built a phone app for managing foodstuffs. The app has three components, a React Native frontend, an Express and MongoDB backend, and a flask microservice for managing voice. Check it out here!",
+      "content": "For my culminating experience at Dartmouth, we built a phone app for managing foodstuffs. The app has three components, a React Native frontend, an Express and MongoDB backend, and a flask microservice for managing voice. Check out the [code](https://github.com/dartmouth-cs98/19f-pantri) and an [article](https://medium.com/dartmouth-cs98/pantri-a-modern-approach-to-your-kitchen-fe14bd64570) about it!",
       "key": "pantri",
       "logo": "pantri"
     },
     {
-      "content": "For the final project in web development, we created Quiplash without a paywall by utilizing websockets to keep open connections throughout the game. Check out the game, as well as the frontend and the backend code.",
+      "content": "For the final project in web development, we created a Quiplash-inspired game without a paywall by utilizing websockets to keep open connections throughout the game. Check out the [game](http://gut-busters.surge.sh/), as well as the [frontend](https://github.com/stephenmcrowe/project-gut-busters) and the [backend](https://github.com/dartmouth-cs52-19S/project-api-gut-busters) code.",
       "key": "gutbusters",
       "logo": "gut_busters"
     },
     {
-      "content": "I developed this website with React to show off my portfolio and practice my web development skills. All the styling was done with pure css. Curious about the code?",
+      "content": "I developed this **website** with React to show off my portfolio and practice my web development skills. All the styling was done with pure css. Curious about the [code](https://github.com/stephenmcrowe/crowestephen.me)?",
       "key": "website",
       "logo": "monitor_mac"
     },
     {
-      "content": "As a developer and director of HackDartmouth, I managed 5 teams of roughly 14 people to organize Dartmouth's annual hackathon. I also coordinated the creation of the new HackDartmouth site.",
+      "content": "As a developer and director of HackDartmouth, I managed 5 teams of roughly 14 people to organize Dartmouth's annual hackathon. I also coordinated the creation of the new HackDartmouth [site](https://hackdartmouth.io/).",
       "key": "hackdartmouth",
       "logo": "hackdartmouth_logo"
     },
     {
-      "content": "**Tiny-Search Engine:** A simple search engine that takes in a search query from the user, crawls the web, indexes the pages found, and outputs a ranked list of search results. Click here to view the code on Github.",
+      "content": "**Tiny-Search Engine:** A simple search engine that takes in a search query from the user, crawls the web, indexes the pages found, and outputs a ranked list of search results. View the [code](https://github.com/stephenmcrowe/tse) on Github.",
       "key": "tse",
       "logo": "search"
     },
     {
-      "content": "As part of my computational linguistics class, we hypothesized that word2vec could be used to easily test biases between news sources. Check out our findings!",
+      "content": "As part of my computational linguistics class, we hypothesized that word2vec could be used to easily test biases between news sources. Check out our [findings](https://github.com/stephenmcrowe/cs72-final)!",
       "key": "compling",
       "logo": "handout"
     },
     {
-      "content": "We built an audio visualizer with a Digilent FPGA, a mic, a VGA monitor, and VHDL. Check out the ![demonstration](https://www.youtube.com/watch?v=gN6DgaZrZ-A&feature=youtu.be) or the project writeup.",
+      "content": "We built an **audio visualizer** with a Digilent FPGA, a mic, a VGA monitor, and VHDL. Check out the [demonstration](https://www.youtube.com/watch?v=gN6DgaZrZ-A&feature=youtu.be) or the [project writeup](https://drive.google.com/drive/folders/1Q7ZV0cw9Hs6LIn7KSw2Y9-kqDNEys0gn?usp=sharing).",
       "key": "digitalelectronics",
       "logo": "cpu"
     }

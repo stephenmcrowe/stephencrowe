@@ -1,18 +1,12 @@
+/* React imports */
 import React, { Component } from 'react';
 
+/* custom imports */
 import svgs from '../img';
 import content from '../assets/content.json';
 import '../styles/experience.scss';
 
-
 class Experience extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-    };
-  }
-
   renderCards = () => {
     return content.experience.map((data) => {
       const Icon = svgs[data.logo];

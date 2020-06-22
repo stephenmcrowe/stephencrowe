@@ -1,11 +1,11 @@
-/* eslint-disable no-unused-vars */
 /* eslint-disable max-len */
+/* React imports */
 import React, { Component } from 'react';
 
+/* custom imports */
 import svgs from '../img';
 import content from '../assets/content.json';
 import '../styles/footer.scss';
-
 
 class Footer extends Component {
   renderLogos = () => {
@@ -20,7 +20,6 @@ class Footer extends Component {
       <footer id="footer">
         <div id="icons-container">
           {this.renderLogos()}
-          {/* <Github className="svg" /> */}
         </div>
         <div id="contact-container">
           &#169; 2020 Stephen Crowe | crowe.stephen.m@gmail.com
