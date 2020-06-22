@@ -1,6 +1,8 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable max-len */
 import React, { Component } from 'react';
 
+import svgs from '../img';
 import content from '../assets/content.json';
 import '../styles/footer.scss';
 
@@ -8,7 +10,8 @@ import '../styles/footer.scss';
 class Footer extends Component {
   renderLogos = () => {
     return content.footer.map((ele) => {
-      return <a href={ele.link}><img src={ele.logo} alt="" /></a>;
+      const Icon = svgs[ele.logo];
+      return <a href={ele.link} key={ele.link}><Icon /></a>;
     });
   };
 
@@ -17,6 +20,7 @@ class Footer extends Component {
       <footer id="footer">
         <div id="icons-container">
           {this.renderLogos()}
+          {/* <Github className="svg" /> */}
         </div>
         <div id="contact-container">
           &#169; 2020 Stephen Crowe | crowe.stephen.m@gmail.com

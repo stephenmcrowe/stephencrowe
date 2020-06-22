@@ -5,11 +5,17 @@ const autoprefixer = require('autoprefixer');
 const env = process.env.NODE_ENV || 'development';
 // set to 'production' or 'development' in your env
 
+const path = require('path');
+
 const finalCSSLoader = (env === 'production') ? MiniCssExtractPlugin.loader : { loader: 'style-loader' };
 
 module.exports = {
   mode: env,
-  output: { publicPath: '/crowestephen.me' },
+  output: {
+    path: path.join(__dirname, '/dist'),
+    filename: 'main.js',
+    publicPath: '/crowestephen.me',
+  },
   entry: ['babel-polyfill', './src'], // this is where our app lives
   devtool: 'source-map', // this enables debugging with source in chrome devtools
   devServer: {
@@ -52,7 +58,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.(jpe?g|png|gif|svg)$/,
+        test: /\.(jpe?g|png|gif)$/,
         use: [
           {
             loader: 'file-loader',
@@ -63,7 +69,10 @@ module.exports = {
           },
         ],
       },
-
+      {
+        test: /\.svg$/,
+        use: ['@svgr/webpack', 'file-loader'],
+      },
     ],
   },
   plugins: [
