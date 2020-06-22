@@ -1,5 +1,10 @@
+/* React imports */
 import React from 'react';
+
+/* third-party imports */
 import Particles from 'react-particles-js';
+
+/* custom imports */
 import '../styles/home.scss';
 
 const particlesOpt = {

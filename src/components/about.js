@@ -1,15 +1,12 @@
+/* React imports */
 import React, { Component } from 'react';
+
+/* custom imports */
 import content from '../assets/content.json';
 import profile from '../img/eiffeltower_selfie.png';
 import '../styles/about.scss';
 
 class About extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {};
-  }
-
   renderContent = () => {
     return content.about.map((ele) => {
       return (

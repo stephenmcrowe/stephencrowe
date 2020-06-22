@@ -1,6 +1,11 @@
+/* React imports */
 import React, { Component } from 'react';
+
+/* third-party imports */
 import { Link } from 'react-scroll';
 // import { animateScroll as scroll } from 'react-scroll';
+
+/* custom imports */
 import '../styles/navbar.scss';
 
 class Navbar extends Component {
