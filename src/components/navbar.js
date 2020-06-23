@@ -3,9 +3,10 @@ import React, { Component } from 'react';
 
 /* third-party imports */
 import { Link } from 'react-scroll';
-// import { animateScroll as scroll } from 'react-scroll';
 
 /* custom imports */
+import hamburger from '../img/hamburger.svg';
+import closeIcon from '../img/close.svg';
 import '../styles/navbar.scss';
 
 class Navbar extends Component {
@@ -13,13 +14,14 @@ class Navbar extends Component {
     super(props);
 
     this.state = {
+      hamburgerOpen: false,
       navStyle: 'navTop',
     };
   }
 
   componentDidMount() {
     document.addEventListener('scroll', () => {
-      const navStyleNew = window.scrollY < 600 ? 'navTop' : 'nav';
+      const navStyleNew = window.scrollY < 500 ? 'navTop' : 'nav';
       const { navStyle } = this.state;
       if (navStyle !== navStyleNew) {
         this.setState({ navStyle: navStyleNew });
@@ -27,19 +29,42 @@ class Navbar extends Component {
     });
   }
 
+  toggleHamburger = (event) => {
+    const { hamburgerOpen } = this.state;
+    this.setState({ hamburgerOpen: !hamburgerOpen });
+  }
+
   render() {
-    const { navStyle } = this.state;
+    const { hamburgerOpen, navStyle } = this.state;
     return (
       <nav className={navStyle}>
         <div className="navHome">
           <Link to="home" smooth className="navLink">Stephen Crowe</Link>
+          <button
+            type="button"
+            aria-label="Menu"
+            id="hamburger"
+            onClick={this.toggleHamburger}
+          >
+            <img src={hamburgerOpen ? closeIcon : hamburger} alt="" />
+          </button>
         </div>
-        <div className="navLinkContainer">
-          <Link to="about" smooth offset={-63} className="navLink">About</Link>
+        <div className={hamburgerOpen ? 'navLinkContainer'
+          : 'navLinkContainer hide'}
+        >
+          <Link to="about"
+            smooth
+            offset={-63}
+            className="navLink"
+            onClick={this.toggleHamburger}
+          >
+            About
+          </Link>
           <Link to="experience"
             smooth
             offset={-63}
             className="navLink"
+            onClick={this.toggleHamburger}
           >
             Experience
           </Link>
@@ -48,6 +73,7 @@ class Navbar extends Component {
             smooth
             offset={-63}
             className="navLink"
+            onClick={this.toggleHamburger}
           >
             Portfolio
           </Link>

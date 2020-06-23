@@ -19,26 +19,30 @@ body, html {
 }
 
 // Media Queries
+/* Custom, iPhone Retina */
 @mixin mq-xs {
   @media (min-width: 320px) {
     @content;
   }
 }
 
+/* Extra Small Devices, Phones */
 @mixin mq-sm {
   @media (min-width: 480px) {
     @content;
   }
 }
 
+/* Small Devices, Tablets */
 @mixin mq-md {
-  @media (min-width: 720px) {
+  @media (min-width: 768px) {
     @content;
   }
 }
 
+/* Desktops */
 @mixin mq-lg {
-  @media (min-width: 1000px) {
+  @media (min-width: 992px) {
     @content;
   }
 }

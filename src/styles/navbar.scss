@@ -1,9 +1,13 @@
 @import './stylesheet.scss';
 
 nav {
-  @extend %flex-row;
-  justify-content: space-between;
-  align-items: center;
+  @extend %flex-column;
+  @include mq-lg {
+    /* desktop content */
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 
   position: fixed;
   top: 0;
@@ -12,34 +16,97 @@ nav {
 
   padding: 1rem 1.5rem;
   z-index: 100;
-  transition: all .3s ease-in-out;
 
   .navHome {
-    font-size: 1.7rem;
+    @extend %flex-row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    font-size: 1.2rem;
+    @include mq-md {
+      font-size: 1.7rem; // tablet and desktop font
+    }
+
+    #hamburger {
+      border: none;
+      text-decoration: none;
+      background-color: transparent;
+      cursor: pointer;
+      height: 34px;
+      width: 34px;
+
+      &:focus {
+        border: none;
+        outline: none;
+        box-shadow: none;
+      }
+
+      @include mq-lg {
+        display: none; // don't dispay for desktop
+      }
+    }
   }
 
   .navLinkContainer {
-    @extend %flex-row;
-    justify-content: space-between;
-    font-size: 1.5rem;
-    
-    height: 100%;
-    width: 35%;
+    @extend %flex-column;
+    align-items: center;
+    font-size: 1.2rem;
+
+    transition: all 0.5s ease-in;
+    max-height: 500px;
+
+    &.hide { // animation
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      transition: all 0.5s ease-out;
+    }
+
+    @include mq-md {
+      font-size: 1.5rem;
+    }
+
+    /* Desktop content */
+    @include mq-lg {
+      flex-direction: row;
+      justify-content: space-between;
+      
+      height: 100%;
+      width: 40%;
+
+      &.hide {
+        max-height: 500px;
+        opacity: 1;
+        overflow: visible;
+      }
+    }
   }
 
   .navLink {
     text-decoration: none;
+    margin-top: 10px;
     margin-bottom: 3px;
+    width: fit-content;
   
     &:hover {
       cursor: pointer;
       margin-bottom: 0px;
+    }
+
+    @include mq-md {
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-top: 0px;
     }
   }
 }
 
 .navTop {
   background-color: transparent;
+  #hamburger img { // white at the top
+    filter: invert(98%) sepia(0%) saturate(1%) hue-rotate(43deg) brightness(112%) contrast(101%);
+  }
   .navLink {
     color: $white;
     &:hover {
@@ -51,6 +118,9 @@ nav {
 
 .nav {
   background-image: linear-gradient(to top, rgba(234, 234, 234, .95), $gray);
+  #hamburger img {
+    filter: invert(11%) sepia(16%) saturate(295%) hue-rotate(92deg) brightness(98%) contrast(94%);
+  }
   .navLink {
     color: $black;
     &:hover {
