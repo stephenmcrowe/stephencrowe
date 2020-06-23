@@ -14,7 +14,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, '/dist'),
     filename: 'main.js',
-    publicPath: '/crowestephen.me',
+    publicPath: path.join('/crowestephen.me', '/'),
   },
   entry: ['babel-polyfill', './src'], // this is where our app lives
   devtool: 'source-map', // this enables debugging with source in chrome devtools
