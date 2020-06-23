@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 
 /* custom imports */
 import content from '../assets/content.json';
-import profile from '../img/eiffeltower_selfie.png';
+import profile from '../img/me.jpg';
 import '../styles/about.scss';
 
 class About extends Component {
