@@ -3,7 +3,6 @@
 .aboutpage {
   @extend %flex-column;
   background-color: $gray;
-  // height: 100vh;
 
   .aboutHeader {
     @extend %flex-row;
@@ -17,11 +16,15 @@
   }
 
   .aboutContent {
-    @extend %flex-row;
-    justify-content: space-around;
-    // background-color: $gray;
+    @extend %flex-column;
+    justify-content: space-between;
     flex: 1;
     padding: 20px 0px;
+
+    @include mq-md {
+      flex-direction: row;
+      justify-content: space-around;
+    }
   }
 }
 
@@ -29,7 +32,7 @@
   @extend %flex-row;
   flex: 2;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 
   img {
     min-width: 100px;
@@ -40,10 +43,20 @@
 
 .information {
   @extend %flex-column;
-  // justify-content: center;
-  padding-right: 10%;
-  padding-top: 10px;
+  align-items: center;
   flex: 3;
+  padding-top: 10px;
+  padding-right: 10%;
+  padding-left: 10%;
+
+  @include mq-md {
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+  @include mq-lg {
+    padding-right: 8%;
+    padding-left: 2%;
+  }
 
   div {
     padding: 10px 0px;
